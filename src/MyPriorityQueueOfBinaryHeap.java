@@ -64,23 +64,16 @@ public class MyPriorityQueueOfBinaryHeap<T extends Comparable<T>> implements MyP
 
             int parentIndex = (index % 2 == 0) ? ((index - 1) / 2) : (index / 2);
 
-            T value1 = heap.get(index).value;
-            T value2 = heap.get(parentIndex).value;
-            int priority1 = heap.get(index).priority;
-            int priority2 = heap.get(parentIndex).priority;
-
-            if (priority1 < priority2) {
-                heap.get(index).value = value2;
-                heap.get(index).priority = priority2;
-                heap.get(parentIndex).value = value1;
-                heap.get(parentIndex).priority = priority1;
+            if (heap.get(index).priority < heap.get(parentIndex).priority) {
+                Node tmp = heap.get(index);
+                heap.set(index, heap.get(parentIndex));
+                heap.set(parentIndex, tmp);
                 index = parentIndex;
             } else {
                 break;
             }
         }
     }
-
 
     public void siftDown(int index) {
         int left = index * 2 + 1;
@@ -95,14 +88,9 @@ public class MyPriorityQueueOfBinaryHeap<T extends Comparable<T>> implements MyP
         }
 
         if (largest != index) {
-            T value1 = heap.get(index).value;
-            T value2 = heap.get(largest).value;
-            int priority1 = heap.get(index).priority;
-            int priority2 = heap.get(largest).priority;
-            heap.get(index).value = value2;
-            heap.get(index).priority = priority2;
-            heap.get(largest).value = value1;
-            heap.get(largest).priority = priority1;
+            Node tmp = heap.get(index);
+            heap.set(index, heap.get(largest));
+            heap.set(largest, tmp);
             siftDown(largest);
         }
     }

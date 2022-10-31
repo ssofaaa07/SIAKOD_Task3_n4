@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="" />
+    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="&lt;&lt;Create Tests&gt;&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueueOfBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueueOfBinaryHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Ghk6DsDc3eetYazXeRq0cLYH8S" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +33,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Task3_n4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +63,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666848026721</updated>
+      <workItem from="1666848028690" duration="2520000" />
+      <workItem from="1667134438664" duration="3215000" />
+      <workItem from="1667161740021" duration="713000" />
+      <workItem from="1667162463773" duration="8661000" />
+      <workItem from="1667198840603" duration="5591000" />
+      <workItem from="1667208407761" duration="78000" />
+      <workItem from="1667209169759" duration="274000" />
     </task>
+    <task id="LOCAL-00001" summary="&lt;&lt;Upgrade classes&gt;&gt;">
+      <created>1667169242228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667169242228</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&lt;&lt;Create class MyPriorityQueueOfArray&gt;&gt;">
+      <created>1667169276209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667169276209</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&lt;&lt;Create Tests&gt;&gt;">
+      <created>1667169299490</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667169299490</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&lt;&lt;Upgrade classes&gt;&gt;" />
+    <MESSAGE value="&lt;&lt;Create class MyPriorityQueueOfArray&gt;&gt;" />
+    <MESSAGE value="&lt;&lt;Create Tests&gt;&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;&lt;Create Tests&gt;&gt;" />
   </component>
 </project>
