@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="&lt;&lt;Create Tests&gt;&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueueOfBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueueOfBinaryHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="&lt;&lt;Finish&gt;&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +64,7 @@
       <workItem from="1667198840603" duration="5591000" />
       <workItem from="1667208407761" duration="78000" />
       <workItem from="1667209169759" duration="274000" />
+      <workItem from="1667209482997" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;&lt;Upgrade classes&gt;&gt;">
       <created>1667169242228</created>
@@ -92,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667169299490</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&lt;&lt;Finish&gt;&gt;">
+      <created>1667209652719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667209652719</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +115,7 @@
     <MESSAGE value="&lt;&lt;Upgrade classes&gt;&gt;" />
     <MESSAGE value="&lt;&lt;Create class MyPriorityQueueOfArray&gt;&gt;" />
     <MESSAGE value="&lt;&lt;Create Tests&gt;&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&lt;&lt;Create Tests&gt;&gt;" />
+    <MESSAGE value="&lt;&lt;Finish&gt;&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;&lt;Finish&gt;&gt;" />
   </component>
 </project>
