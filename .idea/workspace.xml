@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="&lt;&lt;Finish&gt;&gt;" />
+    <list default="true" id="7c5a4748-c239-4889-9245-f10cffeda29b" name="Changes" comment="&lt;&lt;Finish&gt;&gt;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyPriorityQueueOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +37,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/s.butovetskaya/Бутовецкая Софья/ВГУ/22_13/Курсы 2022-23/СиАКОД/Tasks/Task3_n4&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
 }</component>
@@ -65,6 +71,8 @@
       <workItem from="1667208407761" duration="78000" />
       <workItem from="1667209169759" duration="274000" />
       <workItem from="1667209482997" duration="174000" />
+      <workItem from="1667799228084" duration="1517000" />
+      <workItem from="1668058506949" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="&lt;&lt;Upgrade classes&gt;&gt;">
       <created>1667169242228</created>
@@ -94,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667209652719</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&lt;&lt;Finish&gt;&gt;">
+      <created>1667799240208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667799240208</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

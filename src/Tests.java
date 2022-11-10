@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Tests {
-    private class Node {
+    class Node {
         int value;
         int priority;
 
@@ -11,12 +11,157 @@ public class Tests {
             this.priority = priority;
         }
     }
-    public ArrayList<Node> createPQ() {
+
+    MyPriorityQueueOfBinaryHeap<Integer> priorityQueueOfBinaryHeap = new MyPriorityQueueOfBinaryHeap<>();
+    MyPriorityQueueOfArray<Integer> priorityQueueOfArray = new MyPriorityQueueOfArray<>();
+    ArrayList<Node> nodes = new ArrayList<>();
+
+    public ArrayList<Node> createNodes(int n) {
         ArrayList<Node> arr = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            arr.add(new Node(new Random(100).nextInt(), new Random(100).nextInt()));
+        for (int i = 0; i < n; i++) {
+            arr.add(new Node((int) (- 100 + Math.random()*200), (int) (Math.random()*100)));
         }
         return arr;
+    }
+
+    public MyPriorityQueueOfBinaryHeap<Integer> createPQBH(int n) {
+        MyPriorityQueueOfBinaryHeap<Integer> pq = new MyPriorityQueueOfBinaryHeap<>();
+        for (int i = 0; i < n; i++) {
+            pq.insert(nodes.get(i).value, nodes.get(i).priority);
+        }
+        return pq;
+    }
+
+    public MyPriorityQueueOfArray<Integer> createPQA(int n) {
+        MyPriorityQueueOfArray<Integer> pq = new MyPriorityQueueOfArray<>();
+        for (int i = 0; i < n; i++) {
+            pq.insert(nodes.get(i).value, nodes.get(i).priority);
+        }
+        pq.sort();
+        return pq;
+    }
+
+    public void printNodes() {
+        for (int i = 0; i < nodes.size(); i++) {
+            System.out.println(nodes.get(i).value);
+        }
+    }
+
+    public long[] testInsert() {
+        long[] arrResults = new long[10];
+        long cntTime;
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(5000*(i+1));
+                priorityQueueOfBinaryHeap = createPQBH(5000 * (i + 1));
+                long start = System.nanoTime();
+
+                priorityQueueOfBinaryHeap.insert(nodes.get(i).value, nodes.get(i).priority);
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i] = cntTime / cnt;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(5000*(i+1));
+                priorityQueueOfArray = createPQA(5000 * (i+1));
+                long start = System.nanoTime();
+
+                priorityQueueOfArray.insert(nodes.get(i).value, nodes.get(i).priority);
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i + 5] = cntTime/cnt;
+        }
+        return arrResults;
+    }
+
+    public long[] testExtractMax() {
+        long[] arrResults = new long[10];
+        long cntTime;
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(2000 * (i + 1));
+                priorityQueueOfBinaryHeap = createPQBH(2000 * (i + 1));
+                long start = System.nanoTime();
+
+                priorityQueueOfBinaryHeap.extractMax();
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i] = cntTime/cnt;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(2000 * (i + 1));
+                priorityQueueOfArray = createPQA(2000 * (i + 1));
+                long start = System.nanoTime();
+
+                priorityQueueOfArray.extractMax();
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i + 5] = cntTime/cnt;
+        }
+        return arrResults;
+    }
+
+    public long[] testIncrease() {
+        long[] arrResults = new long[10];
+        long cntTime;
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(2000 * (i + 1));
+                priorityQueueOfBinaryHeap = createPQBH(2000 * (i + 1));
+                long start = System.nanoTime();
+
+                priorityQueueOfBinaryHeap.increase(nodes.get(i + 10).value, 10);
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i] = cntTime/cnt;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            cntTime = 0;
+            int cnt = 0;
+            while (cnt < 5) {
+                nodes = createNodes(2000 * (i + 1));
+                priorityQueueOfArray = createPQA(2000 * (i + 1));
+                long start = System.nanoTime();
+
+                priorityQueueOfArray.increase(nodes.get(i + 10).value, 10);
+
+                long finish = System.nanoTime();
+                cntTime += (finish - start);
+                cnt++;
+            }
+            arrResults[i + 5] = cntTime/cnt;
+        }
+        return arrResults;
     }
 
     public long[] test() {
@@ -26,7 +171,7 @@ public class Tests {
         MyPriorityQueueOfBinaryHeap<Integer> priorityQueueOfBinaryHeap = new MyPriorityQueueOfBinaryHeap<>();
         MyPriorityQueueOfArray<Integer> priorityQueueOfArray = new MyPriorityQueueOfArray<>();
 
-        ArrayList<Node> nodes = createPQ();
+        ArrayList<Node> nodes = new ArrayList<>();
 
         long cntTime = 0;
         for (int i = 0; i < 100; i++) {
@@ -102,9 +247,9 @@ public class Tests {
     }
 
     public void printResults() {
-        for (int c = 1; c <= 100; c++) {
-            ArrayList<Node> nodes = createPQ();
-        }
+//        for (int c = 1; c <= 100; c++) {
+//            ArrayList<Node> nodes = createNodes();
+//        }
         long[] arrResults = test();
         for (int i = 0; i < 6; i++) {
             if (i == 0) {
