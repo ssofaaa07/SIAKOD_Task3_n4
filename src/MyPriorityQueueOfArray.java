@@ -18,16 +18,22 @@ public class MyPriorityQueueOfArray<T extends Comparable<T>> implements MyPriori
     @Override
     public void insert(T value, int priority) {
         int index = -1;
-        for (int i = 0; i < size; i++) {
-            if (heap.get(i).priority > priority) {
-                index = i;
+        if (size > 1) {
+            for (int i = 1; i < size; i++) {
+                if (heap.get(i).priority > priority) {
+                    index = i;
+                }
             }
-        }
 
-        if (index == -1) {
-            heap.add(new Node(value, priority));
+            if (index == -1 || size - 1 == index) {
+                heap.add(size, new Node(value, priority));
+            } else {
+                heap.add(index - 1, new Node(value, priority));
+            }
+        } else if (size == 1 && heap.get(0).priority > priority){
+            heap.add(0, new Node(value, priority));
         } else {
-            heap.add(index - 1, new Node(value, priority));
+            heap.add(new Node(value, priority));
         }
         size++;
 //        else {
